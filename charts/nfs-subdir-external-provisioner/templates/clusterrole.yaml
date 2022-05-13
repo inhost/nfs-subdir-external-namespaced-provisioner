@@ -1,6 +1,6 @@
 {{- if .Values.rbac.create }}
-kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
 metadata:
   labels:
     {{- include "nfs-subdir-external-provisioner.labels" . | nindent 4 }}
